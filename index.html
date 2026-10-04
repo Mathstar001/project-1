@@ -4,12 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10131f">
-  <title>Hi my nyoan!</title>
+  <title>Hi my name is mathstar</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
     :root { color-scheme: dark; --ink:#f4f3ff; --muted:#a5a5bd; --violet:#a78bfa; --mint:#72f2c5; }
     * { box-sizing:border-box }
     body { margin:0; min-height:100vh; display:grid; place-items:center; overflow:hidden; padding:24px; color:var(--ink); font-family:Manrope,system-ui,sans-serif; background:radial-gradient(ellipse at 50% 42%,#282344 0%,#171827 46%,#10131f 78%); }
+    nav { position:fixed; z-index:2; top:24px; left:50%; transform:translateX(-50%); display:flex; gap:8px; padding:7px; border:1px solid #ffffff1c; border-radius:999px; background:#10131fbb; backdrop-filter:blur(14px) }
+    nav a { padding:9px 15px; border-radius:999px; color:var(--muted); text-decoration:none; font-size:13px; font-weight:700; transition:background .2s,color .2s }
+    nav a:hover, nav a[aria-current="page"] { color:var(--ink); background:#ffffff14 }
     .glow { position:fixed; width:420px; height:420px; border-radius:50%; filter:blur(100px); opacity:.16; pointer-events:none; animation:drift 9s ease-in-out infinite alternate; }
     .glow.one { background:#8b5cf6; top:-190px; left:-120px } .glow.two { background:#34d399; right:-180px; bottom:-230px; animation-delay:-4s }
     main { position:relative; width:min(100%,680px); text-align:center; padding:clamp(36px,8vw,72px) clamp(24px,7vw,64px); border:1px solid #ffffff1c; border-radius:28px; background:linear-gradient(145deg,#ffffff0d,#ffffff04); box-shadow:0 32px 100px #0006,inset 0 1px #ffffff14; backdrop-filter:blur(18px); animation:arrive .8s cubic-bezier(.2,.8,.2,1) both; }
@@ -27,6 +30,7 @@
 </head>
 <body>
   <div class="glow one" aria-hidden="true"></div><div class="glow two" aria-hidden="true"></div>
+  <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
   <main>
     <div class="orb" aria-hidden="true">✦</div>
     <p class="eyebrow">A little beginning</p>
